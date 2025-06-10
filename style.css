@@ -1,0 +1,134 @@
+:root {
+    --pink: #f14e95;
+    --bg:#0a0a0a;
+    --shadow: 0 2px 2px rgb(0 0 0/0.5);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family:"Work Sans", sans-serif;
+    min-height: 4000px;
+
+
+}
+.hero::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/Website\ MAHALINI\ -\ Penyanyi\ Bali\ yang\ go\ international.svg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+}
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+  
+}
+
+.hero h1, .hero h4, .hero p {
+    text-shadow: var(--shadow);
+
+}
+
+
+
+.hero h1{
+    font-family: "Sacramento", cursive;
+    font-size: 5rem;
+}
+.hero h4 {
+    font-size: 2rem;
+}
+.hero p {
+    font-size: 2rem;
+}
+
+.hero a {
+    color: var(--pink);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+background-color: var(--pink);
+color: white;
+}
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(5px);
+    padding-bottom: 0,1%;
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title{
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.mynavbar .nav-link{
+    text-transform: uppercase;
+}
+
+ .half-half-section{ 
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.text-half, .image-half {
+    flex: 1 1 50%;
+    padding: 2rem;
+    display: flex;
+    align-items: right;
+    box-sizing: border-box;
+}
+
+.text-half {
+    background-color: #f14e95;
+    column-count: 1;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.image-half img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Media Query */
+/* Laptop */
+@media (max-width: 992px){
+    html {
+        font-size: 75%;
+    }
+
+}
+/* tablet */
+@media (max-width: 768px){
+    html {
+        font-size: 65%;
+    }
+    .mynavbar .nav-link{
+       font-size: 2rem;
+       text-align: center;
+    }
+}
+/* mobile phone */
+@media (max-width: 576px){
+    html {
+        font-size: 50%;
+    }
+}
